@@ -28,13 +28,13 @@ Because the models in the architecture are the exact same as in the micromodel, 
 ## In this repository
 
 In this repository you will find the C++ code used for generating the data and training the PRNN models in [2] for archiving purposes. 
-An updated version will be released soon with a demonstration of PRNNs for the 3D micromodel with the Eindhoven Glossy Polymer (EGP) for describing the matrix and a transversally isotropic hyperelasticity model (Bonet) for the fibers.
+An updated version will be released soon with a demonstration of PRNNs for the 3D micromodel with the Eindhoven Glassy Polymer (EGP) for describing the matrix and a transversally isotropic hyperelasticity model (Bonet) for the fibers.
 
 In addition to the source code (`src` folder), the following datasets for training and testing can be found in the `demo` folder:
 
 - A set of 100 **proportional** paths in random directions in the unit force vector space and same time increment for all curves. 
 
-As the simplest scenario assessed, the loading function (sum of all prescribed displacements) of all paths is monotonic (left);
+The loading function (sum of all prescribed displacements) of all paths is monotonic (left);
 
 - A set of 100 **proportional GP** paths in random directions in the unit force vector space and different time increment per curve. 
 
@@ -51,7 +51,9 @@ The last dataset contains the most complex type of loading, designed to be as ge
 
 ## Looking for a python version?
 
-A general repository for all developments related to PRNNs is available at https://github.com/SLIMM-Lab/pyprnn.
+A general repository for all developments related to PRNNs is available at:
+
+https://github.com/SLIMM-Lab/pyprnn.
 
 The repository contains a standalone demonstration in python along with datasets and visualization tools for reproducing results in [1]. 
 

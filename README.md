@@ -31,8 +31,8 @@ In this repository you will find the C++ code used for generating the data and t
 An updated version will be released soon with a demonstration of PRNNs for the 3D micromodel with the Eindhoven Glossy Polymer (EGP) for describing the matrix and a transversally isotropic hyperelasticity model (Bonet) for the fibers.
  
 <p align="center">
-<img src="https://surfdrive.surf.nl/files/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=802&a=true&file=testset_gpthick_loadvector.png&t=srDAT3xQGS3DIQQ&scalingup=0" width="50%" height="50%"/>
-<img src="https://surfdrive.surf.nl/files/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=802&a=true&file=testset_gpalenthick_loadvector.png&t=MJ2OEY3a7e7YbF4&scalingup=0" width="50%" height="50%"/>
+<img src="https://surfdrive.surf.nl/files/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=802&a=true&file=testset_gpthick_loadvector.png&t=srDAT3xQGS3DIQQ&scalingup=0" width="40%" height="40%"/>
+<img src="https://surfdrive.surf.nl/files/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=802&a=true&file=testset_gpalenthick_loadvector.png&t=MJ2OEY3a7e7YbF4&scalingup=0" width="40%" height="40%"/>
 </p>
 
 ## Looking for a python version?

@@ -32,9 +32,15 @@ An updated version will be released soon with a demonstration of PRNNs for the 3
 
 In addition to the source code (`src`), the following datasets for training and testing can be found in the `demo` folder:
 
-- A set of 100 **proportional** paths in random directions in the unit force vector space and same time increment for all curves. As the simplest scenario assessed, the loading function (sum of all prescribed displacements) of all paths is monotonic (left);
-- A set of 100 **proportional GP** paths in random directions in the unit force vector space and different time increment per curve. This time, the loading function changes from one path to another according to a Gaussian Process (GP) with a suitable prior. This means that despite the constant direction in the unit load vector space, unloading-reloading can take place at random times for different duration (left);
-- A set of 1100 **non-proportional GP** paths with different time increments per curve. The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component. Similar to the approach in [1], each strain component is sampled from a suitable GP prior (right).
+- A set of 100 **proportional** paths in random directions in the unit force vector space and same time increment for all curves. 
+As the simplest scenario assessed, the loading function (sum of all prescribed displacements) of all paths is monotonic (left);
+
+- A set of 100 **proportional GP** paths in random directions in the unit force vector space and different time increment per curve. 
+
+This time, the loading function changes from one path to another according to a Gaussian Process (GP) with a suitable prior. This means that despite the constant direction in the unit load vector space, unloading-reloading can take place at random times for different duration (left);
+
+- A set of 1100 **non-proportional GP** paths with different time increments per curve. 
+The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component. Similar to the approach in [1], each strain component is sampled from a suitable GP prior (right).
  
 <p align="center">
 <img src="https://surfdrive.surf.nl/files/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=802&a=true&file=testset_gpalenthick_loadvector.png&t=MJ2OEY3a7e7YbF4&scalingup=0" width="40%" height="40%"/>
@@ -43,6 +49,7 @@ In addition to the source code (`src`), the following datasets for training and 
 
 ## Looking for a python version?
 
-A general repository for all developments related to PRNNs is available at https://github.com/SLIMM-Lab/pyprnn. 
+A general repository for all developments related to PRNNs is available at https://github.com/SLIMM-Lab/pyprnn.
+
 The repository contains a standalone demonstration in python along with datasets and visualization tools for reproducing results in [1]. 
 

@@ -30,11 +30,11 @@ Because the models in the architecture are the exact same as in the micromodel, 
 In this repository you will find the C++ code used for generating the data and training the PRNN models in [2] for archiving purposes. 
 An updated version will be released soon with a demonstration of PRNNs for the 3D micromodel with the Eindhoven Glassy Polymer (EGP) for describing the matrix and a transversally isotropic hyperelasticity model (Bonet) for the fibers.
 
-In addition to the source code (`src`), the following datasets for training and testing can be found in the `data`:
+In addition to the source code (`src`), the following datasets for training and testing are made available (`data`):
 
 - `tr_propgp_080.data`: a set of 1100 **proportional GP** paths in random directions in the unit force vector space; 
 
-The loading function consists of the sum of all prescribed displacements on the micromodel, and, in this set, it changes from one path to another according to a Gaussian Process (GP) with a suitable prior. In other words, unloading-reloading can take place at random times for different duration at a fixed direction in the unit force vector space (left).
+The loading function consists of the sum of all prescribed displacements on the micromodel, and, in this set, it changes from one path to another according to a Gaussian Process (GP) with a suitable prior. In other words, unloading-reloading can take place at random times for different duration at a fixed direction in the unit force vector space.
 
 - `test_propgp_080.data`: a set of 100 **proportional** paths in random directions in the unit force vector space; 
 

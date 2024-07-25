@@ -12,7 +12,7 @@ Because the models in the architecture are the exact same as in the micromodel, 
 - Between $10\times$ and $100\times$ less training data than RNNs for comparable performance
 
 <p align="center">
-<img src="https://surfdrive.surf.nl/files/index.php/s/7g1sFCMFNI4ZfNH/download" width="75%" height="75%"/>
+<img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/matPointTime_paper2.gif" width="75%" height="75%"/>
 </p>
 
 ## Journal papers and preprints
@@ -45,8 +45,8 @@ This time, the loading function changes from one path to another according to a 
 The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component. Similar to the approach in [1], each strain component is sampled from a suitable GP prior (right).
  
 <p align="center">
-<img src="https://surfdrive.surf.nl/files/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=802&a=true&file=testset_gpalenthick_loadvector.png&t=MJ2OEY3a7e7YbF4&scalingup=0" width="40%" height="40%"/>
-<img src="https://surfdrive.surf.nl/files/index.php/apps/files_sharing/ajax/publicpreview.php?x=1920&y=802&a=true&file=testset_gpthick_loadvector.png&t=srDAT3xQGS3DIQQ&scalingup=0" width="40%" height="40%"/>
+<img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/testset_gpalenthick_loadvector.png" width="40%" height="40%"/>
+<img src="hhttps://raw.githubusercontent.com/MarinaMaia/supportMaterial/testset_gpthick_loadvector.png" width="40%" height="40%"/>
 </p>
 
 ## Looking for a python version?

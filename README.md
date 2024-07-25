@@ -36,7 +36,7 @@ In addition to the source code (`src`), the following datasets for training and 
 
 The loading function consists of the sum of all prescribed displacements on the micromodel, and, in this set, it changes from one path to another according to a Gaussian Process (GP) with a suitable prior. In other words, unloading-reloading can take place at random times for different duration at a fixed direction in the unit force vector space.
 
-- `test_propgp_080.data`: a set of 100 **proportional** paths in random directions in the unit force vector space; 
+- `test_propgp_080.data`: a set of 100 **proportional GP** paths in random directions in the unit force vector space; 
 
 Same loading type as previous set, now with different directions (left).
 

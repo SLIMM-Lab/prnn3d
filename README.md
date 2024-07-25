@@ -4,16 +4,16 @@
 
 If you have accurate material models at the microscale and would like to perform computational homogenization, those same models can be directly embedded into a hybrid architecture to make macroscale predictions.
 
+<p align="center">
+<img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/matPointTime_paper2.gif" width="75%" height="75%"/>
+</p>
+
 Because the models in the architecture are the exact same as in the micromodel, a number of features can be directly inherited and therefore not learned from data:
 
 - Path dependency (loading/unloading/reloading) without training for it
 - Strain rate dependency while training with only a single rate
 - Consistent step size dependency (independent for inviscid models; correct dependence for viscous models)
 - Between $10\times$ and $100\times$ less training data than RNNs for comparable performance
-
-<p align="center">
-<img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/matPointTime_paper2.gif" width="75%" height="75%"/>
-</p>
 
 ## Journal papers and preprints
 
@@ -32,17 +32,17 @@ An updated version will be released soon with a demonstration of PRNNs for the 3
 
 In addition to the source code (`src` folder), the following datasets for training and testing can be found in the `demo` folder:
 
-- A set of 100 **proportional** paths in random directions in the unit force vector space; 
+- `tr_propgp_080.data`: a set of 1100 **proportional GP** paths in random directions in the unit force vector space; 
 
-The loading function (sum of all prescribed displacements) of all paths is monotonic, and the time increment is the same in all curves (left).
+The loading function consists of the sum of all prescribed displacements on the micromodel, and, in this set, it changes from one path to another according to a Gaussian Process (GP) with a suitable prior. Each curve has a different time increment. In other words, unloading-reloading can take place at random times for different duration at a given direction in the unit force vector space (left).
 
-- A set of 100 **proportional GP** paths in random directions in the unit force vector space; 
+- `test_propgp_080.data`: a set of 100 **proportional** paths in random directions in the unit force vector space; 
 
-This time, the loading function changes from one path to another according to a Gaussian Process (GP) with a suitable prior, and each curve has a different time increment. This means that despite the constant direction in the unit load vector space, unloading-reloading can take place at random times for different duration (left).
+Same loading type as previous set, now with different directions (left).
 
-- A set of 1100 **non-proportional GP** paths. 
+- `test_nonpropgp_080.data`: set of 100 **non-proportional GP** paths. 
 
-The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component, with a different time increment per curve. Similar to the approach in [1], each strain component of a path is sampled from a suitable GP prior (right).
+The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component, also with a different time increment per curve. Similar to the approach in [1], each strain component of a path is sampled from a suitable GP prior (right).
  
 <p align="center">
 <img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/testset_gpalenthick_loadvector.png" width="40%" height="40%"/>

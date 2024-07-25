@@ -34,7 +34,7 @@ In addition to the source code (`src` folder), the following datasets for traini
 
 - `tr_propgp_080.data`: a set of 1100 **proportional GP** paths in random directions in the unit force vector space; 
 
-The loading function consists of the sum of all prescribed displacements on the micromodel, and, in this set, it changes from one path to another according to a Gaussian Process (GP) with a suitable prior. Each curve has a different time increment. In other words, unloading-reloading can take place at random times for different duration at a given direction in the unit force vector space (left).
+The loading function consists of the sum of all prescribed displacements on the micromodel, and, in this set, it changes from one path to another according to a Gaussian Process (GP) with a suitable prior. Each curve has a different time increment. In other words, unloading-reloading can take place at random times for different duration at a fixed direction in the unit force vector space (left).
 
 - `test_propgp_080.data`: a set of 100 **proportional** paths in random directions in the unit force vector space; 
 
@@ -48,6 +48,8 @@ The last dataset contains the most complex type of loading, designed to be as ge
 <img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/testset_gpalenthick_loadvector.png" width="40%" height="40%"/>
 <img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/testset_gpthick_loadvector.png" width="40%" height="40%"/>
 </p>
+
+Despite the fixed time increment per path provided in these sets, the network can naturally extrapolate to different time increments as this is part of the inputs of the rate-dependent constitutive model [2].  
 
 ## Looking for a python version?
 

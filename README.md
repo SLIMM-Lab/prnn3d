@@ -34,7 +34,7 @@ In addition to the source code (`src` folder), the following datasets for traini
 
 - `tr_propgp_080.data`: a set of 1100 **proportional GP** paths in random directions in the unit force vector space; 
 
-The loading function consists of the sum of all prescribed displacements on the micromodel, and, in this set, it changes from one path to another according to a Gaussian Process (GP) with a suitable prior. Each curve has a different time increment. In other words, unloading-reloading can take place at random times for different duration at a fixed direction in the unit force vector space (left).
+The loading function consists of the sum of all prescribed displacements on the micromodel, and, in this set, it changes from one path to another according to a Gaussian Process (GP) with a suitable prior. In other words, unloading-reloading can take place at random times for different duration at a fixed direction in the unit force vector space (left).
 
 - `test_propgp_080.data`: a set of 100 **proportional** paths in random directions in the unit force vector space; 
 
@@ -42,7 +42,7 @@ Same loading type as previous set, now with different directions (left).
 
 - `test_nonpropgp_080.data`: set of 100 **non-proportional GP** paths. 
 
-The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component, also with a different time increment per curve. Similar to the approach in [1], each strain component of a path is sampled from a suitable GP prior (right).
+The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component. Similar to the approach in [1], each strain component of a path is sampled from a suitable GP prior (right).
  
 <p align="center">
 <img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/testset_gpalenthick_loadvector.png" width="40%" height="40%"/>

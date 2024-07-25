@@ -32,17 +32,17 @@ An updated version will be released soon with a demonstration of PRNNs for the 3
 
 In addition to the source code (`src` folder), the following datasets for training and testing can be found in the `demo` folder:
 
-- A set of 100 **proportional** paths in random directions in the unit force vector space and same time increment for all curves. 
+- A set of 100 **proportional** paths in random directions in the unit force vector space; 
 
-The loading function (sum of all prescribed displacements) of all paths is monotonic (left);
+The loading function (sum of all prescribed displacements) of all paths is monotonic, and the time increment is the same in all curves (left).
 
-- A set of 100 **proportional GP** paths in random directions in the unit force vector space and different time increment per curve. 
+- A set of 100 **proportional GP** paths in random directions in the unit force vector space; 
 
-This time, the loading function changes from one path to another according to a Gaussian Process (GP) with a suitable prior. This means that despite the constant direction in the unit load vector space, unloading-reloading can take place at random times for different duration (left);
+This time, the loading function changes from one path to another according to a Gaussian Process (GP) with a suitable prior, and each curve has a different time increment. This means that despite the constant direction in the unit load vector space, unloading-reloading can take place at random times for different duration (left).
 
-- A set of 1100 **non-proportional GP** paths with different time increments per curve. 
+- A set of 1100 **non-proportional GP** paths. 
 
-The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component. Similar to the approach in [1], each strain component is sampled from a suitable GP prior (right).
+The last dataset contains the most complex type of loading, designed to be as general as possible, with different cycles of unloading-reloading per component, with a different time increment per curve. Similar to the approach in [1], each strain component of a path is sampled from a suitable GP prior (right).
  
 <p align="center">
 <img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/testset_gpalenthick_loadvector.png" width="40%" height="40%"/>

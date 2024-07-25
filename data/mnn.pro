@@ -18,7 +18,7 @@ userInput =
   input = 
   {
     type = "ANNInput";
-    file = "tr_gpalenthick_randomfixed_080.data"; 
+    file = "tr_propgp_080.data"; 
     input = [0, 1, 2, 3, 4, 5, 6, 7, 8];
     output = [9, 10, 11, 12, 13, 14, 15, 16, 17];
     dts = [18];

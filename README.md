@@ -30,7 +30,7 @@ Because the models in the architecture are the exact same as in the micromodel, 
 In this repository you will find the C++ code used for generating the data and training the PRNN models in [2] for archiving purposes. 
 An updated version will be released soon with a demonstration of PRNNs for the 3D micromodel with the Eindhoven Glassy Polymer (EGP) for describing the matrix and a transversally isotropic hyperelasticity model (Bonet) for the fibers.
 
-In addition to the source code (`src` folder), the following datasets for training and testing can be found in the `demo` folder:
+In addition to the source code (`src`), the following datasets for training and testing can be found in the `data`:
 
 - `tr_propgp_080.data`: a set of 1100 **proportional GP** paths in random directions in the unit force vector space; 
 

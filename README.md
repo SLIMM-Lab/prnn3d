@@ -46,7 +46,7 @@ The last dataset contains the most complex type of loading, designed to be as ge
  
 <p align="center">
 <img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/testset_gpalenthick_loadvector.png" width="40%" height="40%"/>
-<img src="https://raw.githubusercontent.com/MarinaMaia/supportMaterial/main/testset_gpthick_loadvector.png" width="40%" height="40%"/>
+<img src="https://raw.githubusercontent.com/MarinaMaia2021/supportMaterial/main/testset_gpthick_loadvector.png" width="40%" height="40%"/>
 </p>
 
 ## Looking for a python version?
